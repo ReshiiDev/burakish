@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "npx serve . -p 3000",
+    "build": "exit 0",
     "preview": "npx serve . -p 4000"
   },
   "keywords": ["luxury", "abaya", "abu-dhabi", "boutique"],
