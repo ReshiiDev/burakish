@@ -10,13 +10,14 @@ Luxury Abaya boutique website for Madinat Zayed Shopping Centre, Abu Dhabi.
    - Go to [dash.cloudflare.com](https://dash.cloudflare.com) → **Pages** → **Create a project** → **Connect to Git**
    - Authorize GitHub and select `ReshiiDev/burakish`
    - **Build settings**:
-     - **Build command**: (leave **empty**)
-     - **Build output directory**: `/` (root)
-     - **Framework preset**: None
+     - **Build command**: `npm run build` ✅
+     - **Build output directory**: `/` (root) ✅
+     - **Framework preset**: None ✅
+     - **Deploy command**: (leave **EMPTY** - remove if auto-filled) ❌
    - Click **Save and Deploy**
 3. ✅ Your site is live! Every push to `main` branch auto-deploys.
 
-**Note**: This is a static HTML site with no build step. Cloudflare Pages serves all files directly from the root directory.
+**Note**: This is a pure static HTML/CSS/JS site. Cloudflare Pages serves files directly from the root. Do NOT set a deploy command!
 
 ---
 
