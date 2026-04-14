@@ -1,0 +1,66 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e0c08"/>
+      <stop offset="100%" stop-color="#080706"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" filter="url(#noise)" opacity="0.025"/>
+
+  <!-- Border frame -->
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#c9a96e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect x="45" y="45" width="1110" height="540" fill="none" stroke="#c9a96e" stroke-width="0.5" stroke-opacity="0.12"/>
+
+  <!-- Diamond corners -->
+  <polygon points="30,30 42,36 36,42" fill="#c9a96e" opacity="0.4"/>
+  <polygon points="1170,30 1158,36 1164,42" fill="#c9a96e" opacity="0.4"/>
+  <polygon points="30,600 42,594 36,588" fill="#c9a96e" opacity="0.4"/>
+  <polygon points="1170,600 1158,594 1164,588" fill="#c9a96e" opacity="0.4"/>
+
+  <!-- Arabesque geometry -->
+  <g transform="translate(600,315)" fill="none" stroke="#c9a96e" stroke-width="0.4" opacity="0.07">
+    <circle r="280"/><circle r="210"/><circle r="145"/><circle r="85"/>
+    <polygon points="0,-280 242,140 -242,140"/>
+    <polygon points="0,280 -242,-140 242,-140"/>
+    <polygon points="-280,0 140,-242 140,242"/>
+    <polygon points="280,0 -140,242 -140,-242"/>
+    <line x1="0" y1="-280" x2="0" y2="280" stroke-width="0.3"/>
+    <line x1="-280" y1="0" x2="280" y2="0" stroke-width="0.3"/>
+    <line x1="-198" y1="-198" x2="198" y2="198" stroke-width="0.3"/>
+    <line x1="198" y1="-198" x2="-198" y2="198" stroke-width="0.3"/>
+  </g>
+
+  <!-- Gold rule left -->
+  <line x1="80" y1="315" x2="360" y2="315" stroke="#c9a96e" stroke-width="0.5" opacity="0.35"/>
+  <polygon points="360,315 368,311 368,319" fill="#c9a96e" opacity="0.5"/>
+  <!-- Gold rule right -->
+  <line x1="1120" y1="315" x2="840" y2="315" stroke="#c9a96e" stroke-width="0.5" opacity="0.35"/>
+  <polygon points="840,315 832,311 832,319" fill="#c9a96e" opacity="0.5"/>
+
+  <!-- Eyebrow text -->
+  <text x="600" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="13" letter-spacing="8" fill="#c9a96e" opacity="0.8">MADINAT ZAYED SHOPPING CENTRE · ABU DHABI</text>
+
+  <!-- Main title -->
+  <text x="600" y="335" text-anchor="middle" font-family="Georgia, serif" font-size="92" letter-spacing="18" fill="#ede6d8" font-weight="400">BURAKISH</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="388" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="12" fill="#c9a96e" font-style="italic">Abaya</text>
+
+  <!-- Tagline -->
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="6" fill="#8c8070" font-style="italic">" Elegance is an Experience. "</text>
+
+  <!-- Bottom info -->
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" letter-spacing="4" fill="#8c8070" opacity="0.7">LUXURY ABAYA BOUTIQUE · @burakish_abaya</text>
+</svg>
