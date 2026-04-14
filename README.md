@@ -2,25 +2,26 @@
 
 Luxury Abaya boutique website for Madinat Zayed Shopping Centre, Abu Dhabi.
 
-## 🚀 Deploy to Vercel (3 steps)
+## 🚀 Deploy to Cloudflare Pages
 
-### Option A — Vercel CLI (fastest)
+### GitHub + Cloudflare Pages (recommended - auto auto-deploys on every push)
+1. **Push to GitHub** (already done: https://github.com/ReshiiDev/burakish)
+2. **Connect to Cloudflare Pages**:
+   - Go to [dash.cloudflare.com](https://dash.cloudflare.com)
+   - Select your account → **Pages** → **Create a project** → **Connect to Git**
+   - Authorize GitHub and select `ReshiiDev/burakish`
+   - **Build settings**:
+     - Build command: (leave empty)
+     - Build output directory: `/`
+   - Click **Save and Deploy**
+3. Your site is live! Every push to GitHub auto-deploys.
+
+### Alternative: Cloudflare CLI (Wrangler)
 ```bash
-npm install -g vercel
-vercel
+npm install -g wrangler
+wrangler pages deploy
 ```
-Follow the prompts. Your site will be live in ~30 seconds.
-
-### Option B — Vercel Dashboard (drag & drop)
-1. Go to [vercel.com](https://vercel.com) → Log in / Sign up (free)
-2. Click **Add New Project** → **Import** or drag & drop this folder
-3. Leave all settings as default → Click **Deploy**
-
-### Option C — GitHub + Vercel (recommended for updates)
-1. Push this folder to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) → **Add New Project** → **Import Git Repository**
-3. Select the repo → Click **Deploy**
-4. Every time you push to GitHub, Vercel auto-deploys.
+Follow the prompts to deploy to Cloudflare Pages.
 
 ---
 
