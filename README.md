@@ -2,22 +2,23 @@
 
 Luxury Abaya boutique website for Madinat Zayed Shopping Centre, Abu Dhabi.
 
-## 🚀 Deploy to Cloudflare Pages
+## 🚀 Deploy to Vercel (recommended - auto-deploys on every push)
 
-### GitHub + Cloudflare Pages (recommended - auto-deploys on every push)
+### Option A — GitHub + Vercel (fastest setup)
 1. **Repository already pushed**: https://github.com/ReshiiDev/burakish
-2. **Connect to Cloudflare Pages**:
-   - Go to [dash.cloudflare.com](https://dash.cloudflare.com) → **Pages** → **Create a project** → **Connect to Git**
-   - Authorize GitHub and select `ReshiiDev/burakish`
-   - **Build settings**:
-     - **Build command**: `npm run build` ✅
-     - **Build output directory**: `/` (root) ✅
-     - **Framework preset**: None ✅
-     - **Deploy command**: (leave **EMPTY** - remove if auto-filled) ❌
-   - Click **Save and Deploy**
-3. ✅ Your site is live! Every push to `main` branch auto-deploys.
+2. Go to [vercel.com](https://vercel.com) → Log in / Sign up (free)
+3. Click **Add New Project** → **Import Git Repository**
+4. Select `ReshiiDev/burakish` from GitHub
+5. Leave all settings as default (Vercel auto-detects static site)
+6. Click **Deploy** ✅
+7. Your site is live! Every push to `main` auto-deploys.
 
-**Note**: This is a pure static HTML/CSS/JS site. Cloudflare Pages serves files directly from the root. Do NOT set a deploy command!
+### Option B — Vercel CLI (local deploy)
+```bash
+npm install -g vercel
+vercel
+```
+Follow the prompts. Your site will be live in ~30 seconds.
 
 ---
 

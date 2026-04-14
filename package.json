@@ -4,9 +4,7 @@
   "description": "Luxury Abaya boutique website — Madinat Zayed, Abu Dhabi",
   "private": true,
   "scripts": {
-    "dev": "npx serve . -p 3000",
-    "build": "exit 0",
-    "preview": "npx serve . -p 4000"
+    "dev": "npx serve . -p 3000"
   },
   "keywords": ["luxury", "abaya", "abu-dhabi", "boutique"],
   "author": "Burakish Abaya",
